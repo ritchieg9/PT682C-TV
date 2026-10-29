@@ -87,3 +87,4 @@ LICENCIA
 GPL-2.0 para las adaptaciones; atribuciones de Linux/MaxLinear/Brad Love/Max nibble
 y del parche de Forest Crossman se conservan en los fuentes.
 # PT682C-TV
+# PT682C-TV
