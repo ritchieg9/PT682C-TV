@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.d",
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.o",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/primary.swiftdeps"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Tests/SessionLifecycleTests/SessionLifecycleTests.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.dia"
+  }
+}

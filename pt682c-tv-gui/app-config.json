@@ -1,0 +1,9 @@
+{
+  "childCold": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/build-gui/pt682c_tv_cold",
+  "childWarm": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/build-gui/pt682c_tv_warm",
+  "firmware": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/firmware/dvb-demod-mxl692.fw",
+  "channelsFile": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/data/last-scan.tsv",
+  "workDir": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04",
+  "vlcNeutral": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/build-gui/vlc-neutral",
+  "vlcRuntime": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/vendor/VLCRuntime"
+}

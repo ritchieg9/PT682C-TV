@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/PT682CTVPackageTests.d",
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/PT682CTVPackageTests.o",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.derived/runner.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.dia"
+  }
+}

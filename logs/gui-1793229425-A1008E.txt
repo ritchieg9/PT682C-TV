@@ -1,0 +1,78 @@
+PT682C GUI 0.5: VLC local y grabacion TS con REC/STOP, sin reiniciar el receptor.
+Lista cargada: 12 canales.
+Lista cargada: 12 canales.
+VLC local: /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/PT682C TV.app/Contents/Resources/VLCRuntime
+Lector de salida 0.3.1: lectura POSIX por bloques disponibles, sin esperar 4096 bytes.
+Proceso iniciado en modo Caliente; esperando receptor listo.
+TV manager v0.4: saved lists, service discovery and persistent USB session.
+PT682C experimental firmware loader v0.1
+Firmware structure: OK
+STARTUP USB RESET: once before claiming interface; not a firmware reload.
+USB reset: LIBUSB_SUCCESS / LIBUSB_TRANSFER_COMPLETED (0)
+WARM START v0.3: checking existing firmware before any GPIO/register/upload writes.
+GET sync: request opcode=7 seq=1 expected=11
+Mailbox: opcode=7 seq=1 payload=11 status=0 checksum=OK
+GET sync: request opcode=8 seq=2 expected=4
+Mailbox: opcode=8 seq=2 payload=4 status=0 checksum=OK
+Existing firmware chip=1 version=1.1.1.3_RC6
+Existing firmware state: demod=2 power=1 CPU=1
+WARM CHECK OK. Reusing firmware on this open USB session.
+Firmware verificado: siguientes aperturas en Caliente, sin recarga.
+SET opcode=2 seq=3 payload=1: sending
+SET response: opcode=2 seq=3 size=0 status=0
+=== CANALES: escribe numero + Enter para cambiar ===
+ 1) 007:1025 XHSFJ                           575.000 MHz  programa 2
+ 2) 007:1026 XHSFJ                           575.000 MHz  programa 9
+ 3) 010:001 XHQMGU                           189.000 MHz  programa 1
+ 4) 010:002 XHQMGU2                          189.000 MHz  programa 2
+ 5) 010:003 XHQMGU3                          189.000 MHz  programa 3
+ 6) 005:1025 Canal Cinco-XHGUE-TDT           521.000 MHz  programa 1
+ 7) 002:001 Las Estrellas-XHGA-TDT           533.000 MHz  programa 1
+ 8) 002:002 XHGA                             533.000 MHz  programa 2
+ 9) 006:001 MULTIMEDIOS                      593.000 MHz  programa 1
+10) 006:002 MILENIO                          593.000 MHz  programa 2
+11) 006:003 TELERITMO                        593.000 MHz  programa 3
+12) 006:004 52MX                             593.000 MHz  programa 4
+m + Enter: lista | q + Enter: salir | Ctrl-C: salir
+RECEPTOR LISTO. Ya puedes seleccionar un canal.
+SELECT: 007:1025 XHSFJ / 575000000 Hz / program 2
+RETUNING inside the SAME USB session. No USB close/reopen or firmware reload.
+SET opcode=0 seq=4 payload=1: sending
+SET response: opcode=0 seq=4 size=0 status=0
+SET opcode=1 seq=5 payload=12: sending
+SET response: opcode=1 seq=5 size=0 status=0
+SET opcode=10 seq=6 payload=6: sending
+SET response: opcode=10 seq=6 size=0 status=0
+SET opcode=13 seq=7 payload=0: sending
+SET response: opcode=13 seq=7 size=0 status=0
+Waiting for lock at 575.000 MHz (up to 20 seconds)...
+GET sync: request opcode=15 seq=8 expected=11
+Mailbox: opcode=15 seq=8 payload=11 status=0 checksum=OK
+Signal SNR=17.2 frame=1 ATSC=1 FEC=1
+VLC child PID=53542; selected program=2
+LIVE. Enter another number to switch, m for menu or q to stop.
+LIVE 575.000 MHz | UDP=10084508 bytes | discarded=7912 | number+Enter changes channel
+REC: /Users/cocoa/Movies/007_1025 XHSFJ_2026-10-28_17-17-14.ts. TS original de la frecuencia completa; no se recodifica.
+LIVE 575.000 MHz | UDP=22196972 bytes | discarded=19108 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=34152832 bytes | discarded=88684 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=46207392 bytes | discarded=125380 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=58225104 bytes | discarded=199188 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=70300720 bytes | discarded=214704 | number+Enter changes channel
+STOP: TS cerrado, 67460792 bytes. /Users/cocoa/Movies/007_1025 XHSFJ_2026-10-28_17-17-14.ts
+LIVE 575.000 MHz | UDP=82389496 bytes | discarded=250748 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=94496696 bytes | discarded=267312 | number+Enter changes channel
+REC: /Users/cocoa/Movies/007_1025 XHSFJ_2026-10-28_17-17-48.ts. TS original de la frecuencia completa; no se recodifica.
+LIVE 575.000 MHz | UDP=106610476 bytes | discarded=278356 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=117685932 bytes | discarded=343220 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=129662848 bytes | discarded=425992 | number+Enter changes channel
+STOP: TS cerrado, 44010988 bytes. /Users/cocoa/Movies/007_1025 XHSFJ_2026-10-28_17-17-48.ts
+LIVE 575.000 MHz | UDP=141717408 bytes | discarded=461656 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=153619312 bytes | discarded=520440 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=165644920 bytes | discarded=587144 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=177738960 bytes | discarded=615952 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=189800100 bytes | discarded=679100 | number+Enter changes channel
+LIVE 575.000 MHz | UDP=201836236 bytes | discarded=735160 | number+Enter changes channel
+Esperando salida real del receptor antes de liberar la sesion.
+SESSION CLOSED. USB=207246848 UDP=206490928 discarded=754668
+Salida confirmada del proceso (codigo 0). USB ya no pertenece a este hijo.
+Lista cargada: 12 canales.

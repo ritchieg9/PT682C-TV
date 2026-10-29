@@ -1,0 +1,49 @@
+{
+  "": {
+    "dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/PT682CTV.d",
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/PT682CTV.o",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/primary.swiftdeps"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppDelegate.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppState.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppStorage.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ContentView.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ReceiverProcess.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/VideoView.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.dia"
+  },
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/main.swift": {
+    "object": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swift.o",
+    "swiftmodule": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swiftdeps",
+    "diagnostics": "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.dia"
+  }
+}

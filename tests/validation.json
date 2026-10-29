@@ -1,0 +1,57 @@
+{
+  "hardware_tested": false,
+  "macOS_compilation_tested": false,
+  "c_syntax_checks_with_stub_header": [
+    "cold OK",
+    "warm OK"
+  ],
+  "table_parser_tests": [
+    {
+      "test": "normal",
+      "pass": true,
+      "result": "ready=2 crc_errors=0 continuity_errors=0\n1|5|1|TV Á\n2|5|2|TEST2"
+    },
+    {
+      "test": "garbage_prefix",
+      "pass": true,
+      "result": "ready=2 crc_errors=0 continuity_errors=0\n1|5|1|TV Á\n2|5|2|TEST2"
+    },
+    {
+      "test": "bad_PAT_crc",
+      "pass": true,
+      "result": "ready=0 crc_errors=3 continuity_errors=0"
+    },
+    {
+      "test": "bad_PMT_crc",
+      "pass": true,
+      "result": "ready=0 crc_errors=6 continuity_errors=0"
+    },
+    {
+      "test": "bad_VCT_crc_fallback",
+      "pass": true,
+      "result": "ready=2 crc_errors=3 continuity_errors=0\n1|0|0|\n2|0|0|"
+    }
+  ],
+  "persistence_tests_with_mock_transport": [
+    {
+      "test": "save",
+      "pass": true,
+      "list_changed": true
+    },
+    {
+      "test": "decline",
+      "pass": true,
+      "list_changed": false
+    },
+    {
+      "test": "none",
+      "pass": true,
+      "list_changed": false
+    },
+    {
+      "test": "cancel",
+      "pass": true,
+      "list_changed": false
+    }
+  ]
+}

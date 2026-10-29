@@ -1,0 +1,7 @@
+{
+  "version": "0.6",
+  "architectures": [
+    "arm64"
+  ],
+  "selfContained": true
+}

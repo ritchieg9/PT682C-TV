@@ -1,0 +1,187 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PT682CTV-arm64-apple-macosx-release.exe": ["<PT682CTV-arm64-apple-macosx-release.exe>"]
+  "PT682CTV-arm64-apple-macosx-release.module": ["<PT682CTV-arm64-apple-macosx-release.module>"]
+  "PT682CTVPackageTests-arm64-apple-macosx-release.module": ["<PT682CTVPackageTests-arm64-apple-macosx-release.module>"]
+  "PT682CTVPackageTests-arm64-apple-macosx-release.test": ["<PT682CTVPackageTests-arm64-apple-macosx-release.test>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "SessionLifecycle-arm64-apple-macosx-release.module": ["<SessionLifecycle-arm64-apple-macosx-release.module>"]
+  "SessionLifecycleTests-arm64-apple-macosx-release.module": ["<SessionLifecycleTests-arm64-apple-macosx-release.module>"]
+  "TSRecorder-arm64-apple-macosx-release.module": ["<TSRecorder-arm64-apple-macosx-release.module>"]
+  "VLCShim-arm64-apple-macosx-release.module": ["<VLCShim-arm64-apple-macosx-release.module>"]
+  "main": ["<PT682CTV-arm64-apple-macosx-release.exe>","<PT682CTV-arm64-apple-macosx-release.module>","<SessionLifecycle-arm64-apple-macosx-release.module>","<TSRecorder-arm64-apple-macosx-release.module>","<VLCShim-arm64-apple-macosx-release.module>"]
+  "test": ["<PT682CTV-arm64-apple-macosx-release.exe>","<PT682CTV-arm64-apple-macosx-release.module>","<PT682CTVPackageTests-arm64-apple-macosx-release.test>","<SessionLifecycle-arm64-apple-macosx-release.module>","<SessionLifecycleTests-arm64-apple-macosx-release.module>","<TSRecorder-arm64-apple-macosx-release.module>","<VLCShim-arm64-apple-macosx-release.module>"]
+default: "main"
+nodes:
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/SessionLifecycle/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Tests/SessionLifecycleTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppDelegate.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppState.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppStorage.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ContentView.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ReceiverProcess.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/VideoView.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/main.swift"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/sources"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/sources"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.product/Objects.LinkFileList"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.derived/runner.swift"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/sources"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.derived/runner.swift"]
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swift.o"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.product/Objects.LinkFileList"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/SessionLifecycle/SessionLifecycle.swift"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/sources"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/sources"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Tests/SessionLifecycleTests/SessionLifecycleTests.swift"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/sources"]
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/sources"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o":
+    tool: clang
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/tsrecorder.c"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o"]
+    description: "Compiling TSRecorder tsrecorder.c"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O2","-DSWIFT_PACKAGE=1","-fblocks","-fmodules","-fmodule-name=TSRecorder","-fmodules-cache-path=/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/include","-isysroot","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.d","-c","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/tsrecorder.c","-o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o"]
+    deps: "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.d"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o":
+    tool: clang
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/vlcshim.c"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o"]
+    description: "Compiling VLCShim vlcshim.c"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/clang","-fobjc-arc","-target","arm64-apple-macosx13.0","-O2","-DSWIFT_PACKAGE=1","-fblocks","-fmodules","-fmodule-name=VLCShim","-fmodules-cache-path=/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/include","-isysroot","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-fPIC","-g","-MD","-MT","dependencies","-MF","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.d","-c","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/vlcshim.c","-o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o"]
+    deps: "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.d"
+
+  "/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<PT682CTV-arm64-apple-macosx-release.exe>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV"]
+    outputs: ["<PT682CTV-arm64-apple-macosx-release.exe>"]
+
+  "<PT682CTV-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTV.swiftmodule"]
+    outputs: ["<PT682CTV-arm64-apple-macosx-release.module>"]
+
+  "<PT682CTVPackageTests-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTVPackageTests.swiftmodule"]
+    outputs: ["<PT682CTVPackageTests-arm64-apple-macosx-release.module>"]
+
+  "<PT682CTVPackageTests-arm64-apple-macosx-release.test>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.xctest/Contents/MacOS/PT682CTVPackageTests"]
+    outputs: ["<PT682CTVPackageTests-arm64-apple-macosx-release.test>"]
+
+  "<SessionLifecycle-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycle.swiftmodule"]
+    outputs: ["<SessionLifecycle-arm64-apple-macosx-release.module>"]
+
+  "<SessionLifecycleTests-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycleTests.swiftmodule"]
+    outputs: ["<SessionLifecycleTests-arm64-apple-macosx-release.module>"]
+
+  "<TSRecorder-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o"]
+    outputs: ["<TSRecorder-arm64-apple-macosx-release.module>"]
+
+  "<VLCShim-arm64-apple-macosx-release.module>":
+    tool: phony
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o"]
+    outputs: ["<VLCShim-arm64-apple-macosx-release.module>"]
+
+  "C.PT682CTV-arm64-apple-macosx-release.exe":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.product/Objects.LinkFileList"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV"]
+    description: "Linking ./.build/arm64-apple-macosx/release/PT682CTV"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release","-o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV","-module-name","PT682CTV","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-dead_strip","-Xlinker","-alias","-Xlinker","_PT682CTV_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xlinker","-headerpad_max_install_names"]
+
+  "C.PT682CTV-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppDelegate.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppState.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/AppStorage.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ContentView.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/ReceiverProcess.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/VideoView.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/main.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/vlcshim.c.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycle.swiftmodule","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/tsrecorder.c.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/sources"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppDelegate.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppState.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/AppStorage.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ContentView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/ReceiverProcess.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/VideoView.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/main.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTV.swiftmodule"]
+    description: "Compiling Swift Module 'PT682CTV' (7 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","PT682CTV","-emit-dependencies","-emit-module","-emit-module-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTV.swiftmodule","-output-file-map","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/output-file-map.json","-whole-module-optimization","-num-threads","10","-c","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTV.build/sources","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-Xcc","-fmodule-map-file=/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/VLCShim.build/module.modulemap","-Xcc","-I","-Xcc","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/include","-Xcc","-fmodule-map-file=/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/TSRecorder.build/module.modulemap","-Xcc","-I","-Xcc","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/include","-module-cache-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","PT682CTV_main","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","pt682c_tv_gui"]
+
+  "C.PT682CTVPackageTests-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.derived/runner.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycleTests.swiftmodule","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/sources"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTVPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'PT682CTVPackageTests' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","PT682CTVPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/PT682CTVPackageTests.swiftmodule","-output-file-map","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/output-file-map.json","-parse-as-library","-whole-module-optimization","-num-threads","10","-c","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/sources","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/include/PT682CTVPackageTests-Swift.h","-color-diagnostics","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","pt682c_tv_gui"]
+
+  "C.PT682CTVPackageTests-arm64-apple-macosx-release.test":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.build/runner.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.xctest/Contents/MacOS/PT682CTVPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/release/PT682CTVPackageTests.xctest/Contents/MacOS/PT682CTVPackageTests"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release","-o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.xctest/Contents/MacOS/PT682CTVPackageTests","-module-name","PT682CTVPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-dead_strip","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/PT682CTVPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx13.0","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xlinker","-headerpad_max_install_names"]
+
+  "C.SessionLifecycle-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/SessionLifecycle/SessionLifecycle.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/sources"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/SessionLifecycle.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycle.swiftmodule"]
+    description: "Compiling Swift Module 'SessionLifecycle' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","SessionLifecycle","-emit-dependencies","-emit-module","-emit-module-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycle.swiftmodule","-output-file-map","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/output-file-map.json","-parse-as-library","-whole-module-optimization","-num-threads","10","-c","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/sources","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-O","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycle.build/include/SessionLifecycle-Swift.h","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","pt682c_tv_gui"]
+
+  "C.SessionLifecycleTests-arm64-apple-macosx-release.module":
+    tool: shell
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Tests/SessionLifecycleTests/SessionLifecycleTests.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycle.swiftmodule","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/sources"]
+    outputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/SessionLifecycleTests.swift.o","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycleTests.swiftmodule"]
+    description: "Compiling Swift Module 'SessionLifecycleTests' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","SessionLifecycleTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules/SessionLifecycleTests.swiftmodule","-output-file-map","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/output-file-map.json","-parse-as-library","-whole-module-optimization","-num-threads","10","-c","@/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/SessionLifecycleTests.build/sources","-I","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/Modules","-target","arm64-apple-macosx13.0","-whole-module-optimization","-num-threads","10","-serialize-diagnostics","-index-store-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/index/store","-O","-enable-testing","-Xfrontend","-enable-cross-import-overlays","-j10","-DSWIFT_PACKAGE","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/.build/arm64-apple-macosx/release/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","pt682c_tv_gui"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/PT682CTV/","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/SessionLifecycle/","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/TSRecorder/","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Sources/VLCShim/","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Tests/SessionLifecycleTests/","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Package.swift","/Users/cocoa/pt682c-diagnostic/pt682c-tv-v04/pt682c-tv-gui/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+
