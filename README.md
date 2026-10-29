@@ -86,3 +86,4 @@ Requiere clang con sanitizers. Solo prueba el parser con TS artificiales incluid
 LICENCIA
 GPL-2.0 para las adaptaciones; atribuciones de Linux/MaxLinear/Brad Love/Max nibble
 y del parche de Forest Crossman se conservan en los fuentes.
+# PT682C-TV
